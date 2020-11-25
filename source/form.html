@@ -39,31 +39,35 @@
       <legend class="visually-hidden">Основные данные кота</legend>
       <label class="programm__field">
         ИМЯ:*
-      <input type="text" name="cat_name" value="барсик">
-      </label >
+      <input type="text" name="cat_name" placeholder="барсик">
+      </label>
       <label class="programm__field">
         Вес (кг):*
-        <input type="number" name="cat_weight" value="7">
-      </label class="programm__field">
-      <label>
-        <input type="number" name="cat_age" value="7">
+        <input type="number" name="cat_weight" placeholder="7">
+      </label>
+      <label class="programm__field">
+       <input type="number" name="cat_age" placeholder="7">
       </label>
     </fieldset>
     <fieldset class="programm__type-select">
       <legend class="visually-hidden">Выбор типа программы</legend>
-      <input type="radio" name="weight_loss" checked>
+      <input type="radio" name="programm_select" checked>
       похудение
-      <input type="radio" name="weight_gain">
+      <input type="radio" name="programm_select">
       Набор массы
-      <input type="radio" name="need_advice">
+      <input type="radio" name="programm_select">
       Не знаю (Нужен ваш совет)
     </fieldset>
     <fieldset>
       <legend class="visually-hidden">Контакты владельца кота</legend>
+      <div class="programm__client-email">
       E-mail:*
       <input type="email" value="kuklachev@gmail.com">
+      </div>
+      <div class="programm__client-phone">
       Телефон:*
       <input type="tel" value="8 (960) 900-60-90">
+      </div>
     </fieldset>
     <fieldset class="programm__comment">
       <legend>Комментарий</legend>
@@ -71,13 +75,20 @@
     </fieldset>
     <fieldset class="programm__extra">
       <legend>Дополнительно</legend>
-      <input type="checkbox" checked>сахарозаменитель
-      <input type="checkbox">питьевая вода
-      <input type="checkbox">молоко
-      <input type="checkbox">витамины
-
+      <div class="programm__extra-options">
+        <input type="checkbox" checked>сахарозаменитель
+      </div>
+      <div  class="programm__extra-options">
+        <input type="checkbox">питьевая вода
+      </div>
+      <div  class="programm__extra-options">
+        <input type="checkbox">молоко
+      </div>
+      <div  class="programm__extra-options">
+        <input type="checkbox">витамины
+      </div>
     </fieldset>
-    <input type="submit" value="отправить заявку">
+    <button type="submit">отправить заявку</button>
     <span>* — Обязательные поля</span>
   </form>
 
