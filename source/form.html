@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="mypage" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TML Academy: Кэт энерджи</title>
+</head>
+<body>
+<header class="page-header">
+  <a class="page-header__logo" href="index.html">
+    <img alt="Логотип кэт энерджи" src="https://via.placeholder.com/101x18">
+  </a>
+  <nav class="main_navigation">
+    <button class="main_navigation__toogle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <div class="main-menu-container">
+      <ul class="main-menu-list">
+        <li class="main-menu-list__item">
+          <a class="main-list-link" href="index.html">главная</a>
+        </li>
+        <li>
+          <a class="main-list-link" href="catalog.html">каталог продукции</a>
+        </li>
+        <li>
+          <a  class="main-list-link" href="form.html">подбор программы</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+<section class="programm">
+  <div class="programm__container">
+  <h2 class="form-header">Подбор программы</h2>
+    <h3>Заполните анкету, и мы подберем
+      программу питания для вашего кота</h3>
+  <form method="post" action="https://echo.htmlacademy.ru">
+    <fieldset class="programm__cat-main-info">
+      <legend class="visually-hidden">Основные данные кота</legend>
+      <label class="programm__field">
+        ИМЯ:*
+      <input type="text" name="cat_name" placeholder="барсик">
+      </label>
+      <label class="programm__field">
+        Вес (кг):*
+        <input type="number" name="cat_weight" placeholder="7">
+      </label>
+      <label class="programm__field">
+       <input type="number" name="cat_age" placeholder="7">
+      </label>
+    </fieldset>
+    <fieldset class="programm__type-select">
+      <legend class="visually-hidden">Выбор типа программы</legend>
+      <input type="radio" name="programm_select" checked>
+      похудение
+      <input type="radio" name="programm_select">
+      Набор массы
+      <input type="radio" name="programm_select">
+      Не знаю (Нужен ваш совет)
+    </fieldset>
+    <fieldset>
+      <legend class="visually-hidden">Контакты владельца кота</legend>
+      <div class="programm__client-email">
+      E-mail:*
+      <input type="email" placeholder="kuklachev@gmail.com">
+      </div>
+      <div class="programm__client-phone">
+      Телефон:*
+      <input type="tel" placeholder="8 (960) 900-60-90">
+      </div>
+    </fieldset>
+    <fieldset class="programm__comment">
+      <legend>Комментарий</legend>
+      <input type="text">
+    </fieldset>
+    <fieldset class="programm__extra">
+      <legend>Дополнительно</legend>
+      <div class="programm__extra-options">
+        <input type="checkbox" checked>сахарозаменитель
+      </div>
+      <div  class="programm__extra-options">
+        <input type="checkbox">питьевая вода
+      </div>
+      <div  class="programm__extra-options">
+        <input type="checkbox">молоко
+      </div>
+      <div  class="programm__extra-options">
+        <input type="checkbox">витамины
+      </div>
+    </fieldset>
+    <button type="submit">отправить заявку</button>
+    <span>* — Обязательные поля</span>
+  </form>
+
+  </div>
+</section>
+  <section class="site-credits__container site-credits">
+    <div class="coop-invite">
+      <div class="invite-dealer">приглашаем
+        к сотрудничеству дилеров!
+      </div>
+      <div class="invite-address">
+        ул. Большая
+        Конюшенная, д. 19/8
+        Санкт-Петербург
+      </div>
+    </div>
+    <div class="how2find-map">
+      <img src="https://via.placeholder.com/320x362" alt="Карта как нас найти">
+    </div>
+
+  </section>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-header-text-logo">
+
+      </div>
+      <div class="page-footer-social">
+        <a class="social-vkontakte">
+
+        </a>
+        <a class="social-instagram">
+
+        </a>
+        <a class="social-facebook">
+
+        </a>
+      </div>
+      <div class="page-footer-credits">
+        <a  href="https://htmlacademy.ru/intensive/adaptive" class="credits-academy">
+          HTML Academy
+        </a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="credits-academy-logo"></a>
+
+      </div>
+
+    </div>
+  </footer>
+</main>
+</body>
+</html>
