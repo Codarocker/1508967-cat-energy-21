@@ -1,12 +1,12 @@
 .cat-presentation {
-  .how-it-works();
+  .how-it-works;
 }
 
 
 .cat-presentation-container {
   margin-top: 42px;
   height: 705px;
-  background: #eaeaea url("../img/before-mobile1.png") no-repeat;
+  background: @bg-light-grey url("../../img/before-mobile1.png") no-repeat;
   background-position: left 0 bottom 88px;
 }
 
@@ -28,13 +28,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  color: black;
+  color: @basic-black;
 }
 
 .cat-presentation__content {
@@ -45,7 +45,7 @@
   padding: 0;
   width: 124px;
   height: 56px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid @border-presentation-light-grey;
   box-sizing: border-box;
   border-radius: 3px;
   text-align: center;
@@ -55,7 +55,7 @@
 .cat-presentation__legend {
   display: block;
   position: absolute;
-  background-color: #eaeaea;
+  background-color: @bg-light-grey;
   //width: 30px;
   //height: 20px;
   font-family: "Arial", sans-serif;
@@ -81,14 +81,14 @@
 
 .cat-presentation__money {
   padding-top: 34px;
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: black;
+  color: @basic-black;
 }
 
 .cat-presentation__cat-toogle {
