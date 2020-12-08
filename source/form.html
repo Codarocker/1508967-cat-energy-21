@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link  rel="stylesheet" href="css/style.css">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
@@ -39,92 +39,98 @@
   </nav>
 </header>
 <main class="form-main">
+  <section class="programm">
+    <div class="programm__container">
+      <h2 class="programm__form-header">Подбор программы</h2>
+      <h3>Заполните анкету, и мы подберем<br>
+        программу питания для вашего кота</h3>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="programm__cat-main-info">
 
-<section class="programm">
-  <div class="programm__container">
-  <h2 class="programm__form-header">Подбор программы</h2>
-    <h3>Заполните анкету, и мы подберем<br>
-      программу питания для вашего кота</h3>
-  <form method="post" action="https://echo.htmlacademy.ru">
-    <fieldset class="programm__cat-main-info">
-
-      <legend class="visually-hidden">Основные данные кота</legend>
-      <label class="programm__field">
-        Имя:*
-        <span class="programm__field--catname">барсик</span>
-      <input type="text" name="cat_name" placeholder="барсик">
-      </label>
-      <label class="programm__field">
-        Вес (кг):*
-        <span class="programm__field--catweight">7</span>
-        <input type="number" name="cat_weight" placeholder="7">
-      </label>
-      <label class="programm__field">
-        Возраст (лет):
-        <span class="programm__field--catage">7</span>
-        <input type="number" name="cat_age" placeholder="7">
-      </label>
-
-    </fieldset>
-    <fieldset class="programm__type-select">
-      <legend class="visually-hidden">Выбор типа программы</legend>
-      <label class="programm__radio-btn programm__radio-btn--weightloss">
-      <input type="radio" name="programm_select" checked>
-      похудение
-      </label>
-      <label class="programm__radio-btn programm__radio-btn--weightgain">
-      <input type="radio" name="programm_select">
-      Набор массы
-      </label>
-      <label class="programm__radio-btn programm__radio-btn--dontknow">
-      <input type="radio" name="programm_select">
-      Не знаю (Нужен ваш совет)
-      </label>
-    </fieldset>
-    <fieldset class="programm__client-contacts">
-      <legend class="visually-hidden">Контакты владельца кота</legend>
-      <h2 class="programm__clients-header">Контактные данные<br>
-        (владельца кота)</h2>
-      <label class="programm__client-email">
-      E-mail:*
-        <span class="programm__client-email--input">kuklachev@gmail.com</span>
-      <input type="email" placeholder="kuklachev@gmail.com">
-      </label>
-      <label class="programm__client-phone">
-      Телефон:*
-        <span class="programm__client-phone--input">8 (960) 900-60-90</span>
-      <input type="tel" placeholder="8 (960) 900-60-90">
-      </label>
-    </fieldset>
-    <fieldset class="programm__comments-section">
-      <legend class="visually-hidden">Комментарий</legend>
-      <h2 class="programm__comments-header">Комментарий</h2>
-      <label class="programm__comments-field">
-        <span class="programm__comments-field--content">Расскажите обо всех повадках кота</span>
-      <input class="visually-hidden" type="text">
-        </label>
-    </fieldset>
-    <fieldset class="programm__extra">
-      <legend class="visually-hidden">Дополнительно</legend>
-      <h2 class="programm__extra-header">Дополнительно</h2>
-      <label class="programm__extra-options programm__extra-options--checked">
-        <input class="visually-hidden" type="checkbox" checked>сахарозаменитель
-      </label>
-      <label  class="programm__extra-options">
-        <input class="visually-hidden" type="checkbox">питьевая вода
-      </label>
-      <label  class="programm__extra-options">
-        <input class="visually-hidden" type="checkbox">молоко
-      </label>
-      <label  class="programm__extra-options">
-        <input class="visually-hidden" type="checkbox">витамины
-      </label>
-    </fieldset>
-    <button class="programm__submit" type="submit">отправить заявку</button>
-    <div class="programm__submit-legend">* — Обязательные поля</div>
-  </form>
-  </div>
-</section>
+          <legend class="visually-hidden">Основные данные кота</legend>
+          <div class="programm__field">
+            <label class="programm__field-label" for="cat_name">
+              Имя:*
+            </label>
+            <input class="programm__field-input programm__field--catname" id="cat_name" name="cat_name" placeholder="барсик" type="text">
+          </div>
+          <div class="programm__field">
+            <label class="programm__field-label" for="cat_weight">
+              Вес (кг):*
+            </label>
+            <input class="programm__field-input programm__field--catweight" id="cat_weight" name="cat_weight" placeholder="7" type="text">
+          </div>
+          <div class="programm__field">
+            <label class="programm__field-label" for="cat_age">
+              Возраст (лет):
+            </label>
+            <input class="programm__field-input programm__field--catage" id="cat_age" name="cat_age" placeholder="7" type="text">
+          </div>
+        </fieldset>
+        <fieldset class="programm__type-select">
+          <legend class="visually-hidden">Выбор типа программы</legend>
+          <input checked class="programm__radio-btn" id="cat-weightloss" name="programm_select" type="radio">
+          <label class="programm__radio-label" for="cat-weightloss">
+            похудение
+          </label>
+          <input class="programm__radio-btn" id="cat-weightgain" name="programm_select" type="radio">
+          <label class="programm__radio-label" for="cat-weightgain">
+            Набор массы
+          </label>
+          <input class="programm__radio-btn" id="cat-unknown" name="programm_select" type="radio">
+          <label class="programm__radio-label" for="cat-unknown">
+            Не знаю (Нужен ваш совет)
+          </label>
+        </fieldset>
+        <fieldset class="programm__client-contacts">
+          <legend class="visually-hidden">Контакты владельца кота</legend>
+          <h2 class="programm__clients-header">Контактные данные<br>
+            (владельца кота)</h2>
+          <div class="programm__client-email">
+            <label class="programm__email-field" for="client-email">
+              E-mail:*
+            </label>
+            <input class="programm__client-email--input" id="client-email" placeholder="kuklachev@gmail.com" type="email">
+          </div>
+          <div class="programm__client-phone">
+            <label class="programm__phone-field" for="client-phone">
+              Телефон:*
+            </label>
+            <input class="programm__client-phone--input" id="client-phone" placeholder="8 (960) 900-60-90" type="tel">
+          </div>
+        </fieldset>
+        <fieldset class="programm__comments-section">
+          <legend class="visually-hidden">Комментарий</legend>
+          <h2 class="programm__comments-header">Комментарий</h2>
+          <label class="programm__comments-field">
+            <textarea class="programm__comments-field--content">Расскажите обо всех повадках кота</textarea>
+          </label>
+        </fieldset>
+        <fieldset class="programm__extra">
+          <legend class="visually-hidden">Дополнительно</legend>
+          <h2 class="programm__extra-header">Дополнительно</h2>
+          <input checked class="programm__extra-options" id="sugar" type="checkbox">
+          <label class="programm__extra-options-label" for="sugar">
+            сахарозаменитель
+          </label>
+          <input class="programm__extra-options" id="water" type="checkbox">
+          <label class="programm__extra-options-label" for="water">
+            питьевая вода
+          </label>
+          <input class="programm__extra-options" id="milk" type="checkbox">
+          <label class="programm__extra-options-label" for="milk">
+            молоко
+          </label>
+          <input class="programm__extra-options" id="vitamins" type="checkbox">
+          <label class="programm__extra-options-label" for="vitamins">
+            витамины
+          </label>
+        </fieldset>
+        <button class="programm__submit" type="submit">отправить заявку</button>
+        <div class="programm__submit-legend">* — Обязательные поля</div>
+      </form>
+    </div>
+  </section>
   <section class="site-credits--form">
     <div class="site-credits__coop-invite">
       <div class="site-credits__invite-dealer">приглашаем
@@ -137,13 +143,13 @@
       </div>
     </div>
     <div class="how2find-map">
-      <img alt="Карта как нас найти" src="img/location.png" width="320" height="362">
+      <img alt="Карта как нас найти" height="362" src="img/location.png" width="320">
     </div>
   </section>
   <footer class="page-footer--form">
     <div class="page-footer__container">
       <div class="page-footer__logo">
-        <img alt="Логотип Cat Energy" src="img/footer-logo.svg" width="128" height="24">
+        <img alt="Логотип Cat Energy" height="24" src="img/footer-logo.svg" width="128">
       </div>
       <div class="page-footer__social">
         <a class="page-footer__social--vkontakte" href="#">

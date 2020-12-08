@@ -35,35 +35,33 @@
 }
 
 .programm__field {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 14px;
 
-  input {
-    .visually-hidden;
-  }
-
-  span {
+  &-input {
+    margin: 0;
+    padding: 0;
     border: 1px solid @border-form-light-grey;
     box-sizing: border-box;
-    padding-top: 13px;
     padding-left: 15px;
+    font: inherit;
+    color: @special-dark-grey;
+    text-transform: uppercase;
   }
 
-  .programm__field--catname {
+  &--catname {
     width: 229px;
     height: 45px;
   }
 
-  .programm__field--catweight {
+  &--catweight {
     width: 204px;
     height: 45px;
   }
 
-  .programm__field--catage {
+  &--catage {
     width: 172px;
     height: 45px;
   }
@@ -84,35 +82,35 @@
   input {
     .visually-hidden;
   }
-}
 
-.programm__radio-btn {
-  position: relative;
-  padding-left: 45px;
-  padding-bottom: 25px;
-
-  &::before {
+  input:checked + .programm__radio-label::after {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 0;
-    top: -6px;
+    width: 14px;
+    height: 14px;
+    left: 8px;
+    top: 2px;
     border-radius: 50%;
-    border: 1px solid @border-presentation-light-grey;
+    background-color: @basic-green;
     box-sizing: border-box;
   }
 }
 
-.programm__radio-btn--weightloss::after {
+.programm__radio-label {
+  position: relative;
+  padding-left: 45px;
+  padding-bottom: 25px;
+}
+
+.programm__radio-label::before {
   content: "";
   position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 8px;
-  top: 2px;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: -6px;
   border-radius: 50%;
-  background-color: @basic-green;
+  border: 1px solid @border-presentation-light-grey;
   box-sizing: border-box;
 }
 
@@ -121,16 +119,13 @@
   padding: 0;
   border: none;
 
-  input {
-    .visually-hidden;
-  }
-
-  label {
+  div {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     text-transform: uppercase;
     color: @special-dark-grey;
+    font: inherit;
   }
 }
 
@@ -155,19 +150,20 @@
   }
 }
 
-.programm__client-email {
-  padding: 0;
-}
-
 .programm__client-email--input {
-  position: relative;
   width: 219px;
   height: 45px;
-  padding-top: 14px;
   padding-left: 15px;
   margin-bottom: 14px;
   border: 1px solid @border-presentation-light-grey;
   box-sizing: border-box;
+  font: inherit;
+  text-transform: uppercase;
+  color: @special-dark-grey;
+}
+
+.programm__email-field {
+  position: relative;
 
   &::after {
     position: absolute;
@@ -175,15 +171,13 @@
     width: 18px;
     height: 13px;
     background: url("../img/email-icon.svg") no-repeat center;
-    right: 16px;
-    top: 16px;
+    left: 246px;
+    top: 3px;
   }
 }
 
-.programm__client-phone--input {
-
-  .programm__client-email--input;
-  width: 204px;
+.programm__phone-field {
+  position: relative;
 
   &::after {
     position: absolute;
@@ -191,9 +185,15 @@
     width: 20px;
     height: 20px;
     background: url("../img/phone-icon.svg") no-repeat center;
-    right: 13px;
-    top: 13px;
+    left: 247px;
+    top: 0;
   }
+}
+
+.programm__client-phone--input {
+
+  .programm__client-email--input;
+  width: 204px;
 }
 
 .programm__comments-section {
@@ -212,16 +212,15 @@
 }
 
 .programm__comments-field--content {
-  display: flex;
-  justify-content: center;
-  position: relative;
   width: 280px;
   height: 150px;
   padding-top: 9px;
   box-sizing: border-box;
   border: 1px solid @border-form-light-grey;
   text-transform: uppercase;
+  font: inherit;
   color: @special-dark-grey;
+  text-align: center;
 }
 
 .programm__extra {
@@ -232,28 +231,34 @@
   border: none;
 
   &-options {
+    .visually-hidden;
+  }
+
+  input:checked + label::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: url("../img/checked-icon.svg") no-repeat center;
+  }
+
+  &-options-label {
     position: relative;
     padding-bottom: 25px;
     padding-left: 44px;
     text-transform: uppercase;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 26px;
-      height: 26px;
-      left: 0;
-      top: -2px;
-      border: 1px solid @border-presentation-light-grey;
-      box-sizing: border-box;
-    }
   }
+}
 
-  &-options--checked {
-    &::before {
-      background: url("../img/checked-icon.svg") no-repeat center;
-    }
-  }
+.programm__extra-options-label::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  left: 0;
+  top: -2px;
+  border: 1px solid @border-presentation-light-grey;
+  box-sizing: border-box;
 }
 
 .programm__extra-header {
