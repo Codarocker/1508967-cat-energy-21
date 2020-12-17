@@ -1,6 +1,16 @@
 .site-credits {
   height: 476px;
   //background: url("../img/location.png") no-repeat bottom;
+
+  @media (min-width: @tablet-width) {
+    height: 601px;
+
+    img {
+      display: none;
+    }
+    background: url("../img/location-tablet.png") no-repeat bottom;
+  }
+
   &--form {
     background: @bg-options-light-grey;
   }
@@ -14,14 +24,31 @@
   align-items: center;
   //width: 280px;
   justify-content: stretch;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    height: 201px;
+  }
 }
 
 .site-credits__invite-dealer {
-  .cat-presentation__money;
+  //.cat-presentation__money;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @basic-black;
   padding: 0;
   text-align: left;
   font-size: 16px;
   line-height: 18px;
+  width: 140px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 51px;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .site-credits__invite-address {
@@ -31,4 +58,11 @@
   font-size: 14px;
   line-height: 20px;
   text-align: left;
+  width: 140px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    padding-right: 72px;
+    width: 159px;
+  }
 }

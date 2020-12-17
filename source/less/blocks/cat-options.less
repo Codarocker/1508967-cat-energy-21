@@ -1,5 +1,9 @@
 .cat-options {
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .cat-options__item {
@@ -8,6 +12,14 @@
   width: 280px;
   height: 266px;
   background: @bg-options-light-grey;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 708px;
+    height: 372px;
+    text-align: left;
+  }
 }
 
 .cat-options__description {
@@ -18,6 +30,24 @@
   width: 240px;
   height: auto;
   border-bottom: 1px solid @border-options-light-grey;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    border: none;
+    padding: 0;
+    padding-top: 24px;
+    padding-left: 52px;
+    width: 380px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &--pro {
+    @media (min-width: @tablet-width) {
+      width: 342px;
+    }
+  }
 }
 
 .cat-options__link {
@@ -33,6 +63,13 @@
   text-align: left;
   text-transform: uppercase;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 52px;
+    padding-top: 52px;
+  }
 }
 
 .cat-options__link::after {
@@ -43,6 +80,11 @@
   width: 24px;
   height: 12px;
   background-image: url("../img/arrow-icon.svg");
+
+  @media (min-width: @tablet-width) {
+    left: 185px;
+    top: 62px;
+  }
 }
 
 
@@ -59,10 +101,23 @@
   text-transform: uppercase;
   text-align: center;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+
+    padding-top: 77px;
+    padding-left: 53px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
 }
 
 .cat-options__header--pro {
   padding-left: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 53px;
+  }
 }
 
 .cat-options__header::before {
@@ -74,6 +129,13 @@
   left: 22px;
   top: 18px;
   background: @basic-green;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    left: 446px;
+    top: 92px;
+  }
 }
 
 .cat-options__header--slim::after {
@@ -84,6 +146,12 @@
   left: 29px;
   top: 14px;
   background: url("../img/cat-slim.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    transform: scale(4, 4);
+    left: 530px;
+    top: 150px;
+  }
 }
 
 .cat-options__header--pro::after {
@@ -94,4 +162,10 @@
   left: 8px;
   top: 29px;
   background: url("../img/cat-pro.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    transform: scale(4, 4);
+    left: 510px;
+    top: 175px;
+  }
 }

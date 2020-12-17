@@ -2,6 +2,7 @@
 <html class="mypage" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, inital-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -13,7 +14,7 @@
       <a class="main-navigation__logo" href="index.html">
         <img alt="Логотип кэт энерджи" src="img/logo-mobile.svg">
       </a>
-      <a class="main-navigation__logo" href="index.html">
+      <a class="main-navigation__logo-footer" href="index.html">
         <img alt="Логотип кэт энерджи" src="img/footer-logo2.svg">
       </a>
       <div class="main-navigation__toogle">
@@ -25,13 +26,13 @@
     </div>
     <div class="main-navigation__main-menu-container">
       <ul class="main-navigation__main-menu-list">
-        <li class="main-navigation__main-menu-list-item">
+        <li class="main-navigation__main-menu-list-item main-navigation--main-page-item">
           <a class="main-navigation__main-list-link" href="index.html">главная</a>
         </li>
-        <li class="main-navigation__main-menu-list-item">
+        <li class="main-navigation__main-menu-list-item main-navigation--catalog-page-item">
           <a class="main-navigation__main-list-link" href="catalog.html">каталог продукции</a>
         </li>
-        <li class="main-navigation__main-menu-list-item">
+        <li class="main-navigation__main-menu-list-item main-navigation--form-page-item">
           <a class="main-navigation__main-list-link" href="form.html">подбор программы</a>
         </li>
       </ul>
@@ -41,7 +42,7 @@
 <main class="mypage-main">
   <section class="site-promo">
     <div class="site-promo__container">
-    <h1 class="site-promo__header">Функциональное питание для котов</h1>
+    <h1 class="site-promo__header">Функциональное<br>питание для котов</h1>
     <div class="site-promo__legend">Занялся собой? Займись котом!</div>
     <a class="site-promo__button" href="form.html">подобрать программу</a>
     </div>
@@ -56,7 +57,7 @@
     <div class="cat-options__item">
 
       <h2 class="cat-options__header cat-options__header--pro">набор массы</h2>
-      <p class="cat-options__description">Заработать авторитет среди дворовых котов и даже
+      <p class="cat-options__description cat-options__description--pro">Заработать авторитет среди дворовых котов и даже
         собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
       <a class="cat-options__link" href="catalog.html">каталог pro</a>
     </div>
@@ -151,7 +152,7 @@
         </a>
       </div>
       <div class="page-footer__credits">
-        <a class="page-footer__credits__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__credits__link page-footer__credits__link--text" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
         </a>
         <a class="page-footer__credits--link page-footer__credits--academy-logo" href="https://htmlacademy.ru/intensive/adaptive"></a>

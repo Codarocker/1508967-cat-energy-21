@@ -8,12 +8,23 @@
   height: 705px;
   background: @bg-light-grey url("../img/before-mobile1.png") no-repeat;
   background-position: left 0 bottom 88px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 22px;
+    background-color: white;
+  }
 }
 
 .cat-presentation__header {
   .how-it-works__header;
   padding-top: 33px;
   padding-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 33px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .cat-presentation__summary {
@@ -21,6 +32,13 @@
   padding: 0;
   padding-top: 33px;
   padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 63px;
+    padding-bottom: 54px;
+  }
 }
 
 .cat-presentation__data {
@@ -35,6 +53,12 @@
   line-height: 24px;
   text-transform: uppercase;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .cat-presentation__content {
@@ -50,6 +74,12 @@
   border-radius: 3px;
   text-align: center;
   justify-self: center;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    height: 72px;
+    margin-right: 42px;
+  }
 }
 
 .cat-presentation__legend {
@@ -65,18 +95,34 @@
   line-height: 12px;
   text-transform: none;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @basic-white;
+  }
 }
 
 .cat-presentation--weight {
   width: 87px;
   top: 47px;
   left: 18px;
+
+  @media (min-width: @tablet-width) {
+    top: 53px;
+    left: 35px;
+  }
 }
 
 .cat-presentation--duration {
   width: 87px;
   top: 48px;
   right: 19px;
+
+  @media (min-width: @tablet-width) {
+    top: 53px;
+    left: 240px;
+  }
 }
 
 .cat-presentation__money {
@@ -89,13 +135,38 @@
   text-align: center;
   text-transform: uppercase;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 174px;
+    text-align: right;
+    margin-left: 535px;
+    margin-top: -90px;
+  }
 }
 
 .cat-presentation__cat-toogle {
-  .cat-presentation__money;
+  //.cat-presentation__money;
   display: flex;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-black;
   width: 228px;
   height: 40px;
   justify-content: space-around;
   padding-top: 301px;
+  outline: 2px solid chartreuse;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 580px;
+    margin: 0 auto;
+  }
 }

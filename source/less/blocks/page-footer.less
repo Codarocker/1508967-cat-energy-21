@@ -4,11 +4,25 @@
   &--form {
     background: @bg-options-light-grey;
   }
+
+  @media (min-width: @tablet-width) {
+    height: 150px;
+    background: @bg-options-light-grey;
+  }
 }
 
 .page-footer__container {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    display: flex;
+    width: 708px;
+    justify-content: space-between;
+    outline: 2px dotted darkgoldenrod;
+    margin-left: 30px;
+  }
 }
 
 .page-footer__logo {
@@ -19,6 +33,11 @@
   text-align: center;
   box-sizing: border-box;
   border-bottom: 1px solid @border-light-grey;
+
+  @media (min-width: @tablet-width) {
+    height: 150px;
+    border: none;
+  }
 }
 
 .page-footer__social {
@@ -30,6 +49,16 @@
   align-items: center;
   box-sizing: border-box;
   border-bottom: 1px solid @border-light-grey;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    height: 150px;
+    border: none;
+    padding: 0;
+    width: 129px;
+    outline: 2px dotted cyan;
+    outline-offset: -2px;
+  }
 }
 
 .page-footer__social--vkontakte {
@@ -37,6 +66,12 @@
   width: 23px;
   height: 16px;
   background: url("../img/icon_vkontakte.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    transform: scale(1.5);
+    //padding-right: 35px;
+  }
 }
 
 .page-footer__social--instagram {
@@ -44,6 +79,12 @@
   width: 16px;
   height: 16px;
   background: url("../img/icon_instagram.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    transform: scale(1.5);
+    //padding-right: 35px;
+  }
 }
 
 .page-footer__social--facebook {
@@ -51,6 +92,12 @@
   width: 22px;
   height: 22px;
   background: url("../img/icon_facebook.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    transform: scale(1.5);
+    //padding-left: 10px;
+  }
 }
 
 .page-footer__credits {
@@ -62,10 +109,20 @@
   font-size: 16px;
   line-height: 18px;
   color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    height: 150px;
+  }
 }
 
 .page-footer__credits--link {
   display: block;
+}
+
+.page-footer__credits__link--text {
+  @media (min-width: @tablet-width) {
+    padding-right: 22px;
+  }
 }
 
 .page-footer__credits--academy-logo {
