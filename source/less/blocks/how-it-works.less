@@ -7,6 +7,13 @@
     margin-top: -20px;
     width: 708px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding: 0;
+    width: 1220px;
+    //height: 454px;
+  }
 }
 
 .how-it-works__header {
@@ -30,6 +37,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 71px;
+  }
 }
 
 
@@ -38,8 +49,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 2px solid crimson;
-  outline-offset: -2px;
+  /*outline: 2px solid crimson;
+  outline-offset: -2px;*/
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -49,6 +60,11 @@
     grid-template-areas:
       "how-it-works__list-item--leaf how-it-works__list-item--tube"
       "how-it-works__list-item--eat how-it-works__list-item--alarm";
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

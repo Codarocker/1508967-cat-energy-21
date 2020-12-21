@@ -4,6 +4,13 @@
   @media (min-width: @tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
 }
 
 .cat-options__item {
@@ -19,6 +26,14 @@
     width: 708px;
     height: 372px;
     text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    margin-top: 82px;
+    width: 570px;
+    height: 374px;
   }
 }
 
@@ -43,9 +58,18 @@
     line-height: 24px;
   }
 
+  @media (min-width: @desktop-width) {
+    width: 467px;
+    padding-top: 73px;
+  }
+
   &--pro {
     @media (min-width: @tablet-width) {
       width: 342px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 457px;
     }
   }
 }
@@ -70,6 +94,10 @@
     padding-left: 52px;
     padding-top: 52px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 27px;
+  }
 }
 
 .cat-options__link::after {
@@ -84,6 +112,11 @@
   @media (min-width: @tablet-width) {
     left: 185px;
     top: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 185px;
+    top: 37px;
   }
 }
 
@@ -110,6 +143,10 @@
     line-height: 36px;
     text-align: left;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 214px;
+  }
 }
 
 .cat-options__header--pro {
@@ -117,6 +154,10 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 214px;
   }
 }
 
@@ -136,6 +177,13 @@
     left: 446px;
     top: 92px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
+    left: 52px;
+    top: 47px;
+  }
 }
 
 .cat-options__header--slim::after {
@@ -152,6 +200,12 @@
     left: 530px;
     top: 150px;
   }
+
+  @media (min-width: @desktop-width) {
+    transform: scale(2, 2);
+    left: 82px;
+    top: 62px;
+  }
 }
 
 .cat-options__header--pro::after {
@@ -167,5 +221,11 @@
     transform: scale(4, 4);
     left: 510px;
     top: 175px;
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: scale(2, 2);
+    left: 67px;
+    top: 82px;
   }
 }

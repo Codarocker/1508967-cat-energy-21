@@ -11,6 +11,16 @@
     background: url("../img/location-tablet.png") no-repeat bottom;
   }
 
+  @media (min-width: @desktop-width) {
+    position: relative;
+    height: 400px;
+
+    img {
+      display: none;
+    }
+    background: url("../img/location-desktop.png") no-repeat center;
+  }
+
   &--form {
     background: @bg-options-light-grey;
   }
@@ -28,6 +38,15 @@
   @media (min-width: @tablet-width) {
     justify-content: space-between;
     height: 201px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    justify-content: space-between;
+    width: 570px;
+    background-color: @basic-white;
+    left: 110px;
+    top: 92px;
   }
 }
 
